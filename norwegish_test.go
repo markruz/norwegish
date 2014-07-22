@@ -1,6 +1,10 @@
-package norwegish
+package norwegish_test
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/kytrinyx/norwegish"
+)
 
 func TestTranslate(t *testing.T) {
 
@@ -14,7 +18,7 @@ func TestTranslate(t *testing.T) {
 		{"wish", "vish"},
 	}
 	for _, tt := range testCases {
-		got := Translate(tt.in)
+		got := norwegish.Translate(tt.in)
 		if got != tt.out {
 			t.Errorf("expected Translate(%s) to equal `%s`, got %#v", tt.in, tt.out, got)
 		}
