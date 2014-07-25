@@ -1,6 +1,6 @@
 # Norwegish
 
-Say it with flare, say it in Norwegish.
+Say it with flair, say it in Norwegish.
 
 ```go
 package main
